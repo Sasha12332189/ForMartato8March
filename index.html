@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<title>Для любимой Марточки!</title>
+<link rel="stylesheet" href="style.css">
+<script src="script.js" defer></script>
+</head>
+<body>
+
+<div class="hearts"></div>
+
+<!-- СТАРТ -->
+<section id="start" class="screen">
+  <h1>Любимая Марточка, у меня для тебя маленькая игра</h1>
+  <p>Пройди её до конца</p>
+  <button id="startBtn">Начать</button>
+</section>
+
+<!-- ВОПРОСЫ -->
+<section id="questions" class="screen hidden">
+  <h2>Почему я тебя люблю?</h2>
+  <div class="answers">
+    <div class="answer" data-text="Ты самая красивая в этом мире">
+      <span class="heart-empty">♡</span>
+      <span class="text">Красивая</span>
+      <div class="box"></div>
+    </div>
+    <div class="answer" data-text="Ты самая милая из всех">
+      <span class="heart-empty">♡</span>
+      <span class="text">Милая</span>
+      <div class="box"></div>
+    </div>
+    <div class="answer" data-text="Ты самая веселая и смешная, можешь меня рассмешить всегда и поднять настроение">
+      <span class="heart-empty">♡</span>
+      <span class="text">Смешная</span>
+      <div class="box"></div>
+    </div>
+    <div class="answer" data-text="Ты самая преданная, из всех кого я видел, я очень ценю это">
+      <span class="heart-empty">♡</span>
+      <span class="text">Преданная</span>
+      <div class="box"></div>
+    </div>
+    <div class="answer" data-text="Ты самая заботливая и самая самая">
+      <span class="heart-empty">♡</span>
+      <span class="text">Нежная</span>
+      <div class="box"></div>
+    </div>
+  </div>
+  <button id="nextQuestion">Далее</button>
+</section>
+
+<!-- ИГРА -->
+<section id="game" class="screen hidden">
+  <h2>Найди одинаковые карточки! </h2>
+  <p>Открой все пары</p>
+  <div class="cards"></div>
+  <p>Ходов: <span id="moves">0</span></p>
+  <button id="gameNext" class="hidden">Далее</button>
+</section>
+
+<!-- ФИНАЛ -->
+<section id="final" class="screen hidden">
+  <h1>С 8 Марта тебя, Марточка ❤️</h1>
+  <p>Ты самый прекрасный человек в моей жизни. Я люблю тебя и буду любить всегда.<br>Спасибо что ты есть ❤️</p>
+</section>
+
+</body>
+</html>
